@@ -1,0 +1,28 @@
+{
+  "name": "jwr-theme-tailwinds",
+  "version": "1.0.0",
+  "description": "Tailwinds for JwR theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadwer/wordpres-jwr-theme.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "theme",
+    "basic",
+    "initial",
+    "state",
+    "tailwinds",
+    "custom"
+  ],
+  "author": "Gabino Ramírez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadwer/wordpres-jwr-theme/issues"
+  },
+  "homepage": "https://github.com/jadwer/wordpres-jwr-theme#readme"
+}
