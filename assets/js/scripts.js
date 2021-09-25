@@ -7,7 +7,7 @@
   \**************************/
 /***/ (() => {
 
-
+console.log("%cTheme designed and developed by Gabino Ramírez from https://themes.gabinoramirez.com/", "color:green");
 
 /***/ }),
 
