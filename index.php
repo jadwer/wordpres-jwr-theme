@@ -2,7 +2,7 @@
 <div class="content">
     <h1>Aqui el index</h1>
 
-    <main class="continer mx-auto bg-current">
+    <main>
         <?php
 
         if (have_posts()) :

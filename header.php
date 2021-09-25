@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-    <header>
+    <header class="flex justify-center items-center bg-gray-400">
         <a href="<?= esc_url(home_url('/')) ?>">
             <?php the_custom_logo();
             bloginfo('name'); ?>
