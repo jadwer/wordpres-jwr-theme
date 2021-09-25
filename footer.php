@@ -1,14 +1,12 @@
         </main>
-    <footer>
-        Footer
-        &copy;
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-        <nav>
-        <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
-        <?php wp_nav_menu(array('theme_location' => 'social-menu')); ?>
-        <nav>
-    </footer>
-    <?php wp_footer(); ?>
-</body>
+        <footer class="flex bg-gray-700 text-gray-400 justify-center mx-auto">
+            <?php
+            get_template_part('./template-parts/footer-copy');
+            get_template_part('./template-parts/footer-menu');
+            get_template_part('./template-parts/footer-social');
+            ?>
+        </footer>
+        <?php wp_footer(); ?>
+        </body>
 
-</html>
+        </html>

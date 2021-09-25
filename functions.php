@@ -122,7 +122,7 @@ add_filter( 'get_custom_logo', 'change_logo_class' );
 
 function change_logo_class( $html ) {
 
-    $html = str_replace( 'custom-logo', 'your-custom-class', $html );
+    $html = str_replace( 'custom-logo', 'h-20 w-auto', $html );
     $html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
 
     return $html;

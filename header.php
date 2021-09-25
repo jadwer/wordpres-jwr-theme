@@ -12,28 +12,9 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="flex justify-center items-center bg-gray-400">
-            <?php //the_custom_logo();?>
-        <a href="<?= esc_url(home_url('/')) ?>">
-            <?php bloginfo('name'); ?>
-            <?php bloginfo('description'); ?>
-        </a>
-
-        <nav class="flex">
-            <?php wp_nav_menu(array(
-                'theme_location' => 'header-menu',
-                'menu'                 => 'header',
-                'menu_class'           => 'flex',
-                'container'            => '',
-                'echo'                 => true,
-                'items_wrap'           => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                'li_class'             => 'mr-6',
-                'a_class'              => 'text-blue-500 hover:text-blue-800'
-
-                )); ?>
+    <header class="h-32 bg-gray-400">
+        <nav class="flex flex-wrap content-center">
+            <?php get_template_part('./template-parts/header-identity'); ?>
+            <?php get_template_part('./template-parts/header-menu'); ?>
         </nav>
-
     </header>
-
-    <?php get_sidebar(); ?>
-    <main>
