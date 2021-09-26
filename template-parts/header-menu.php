@@ -7,7 +7,7 @@
         'echo'                 => true,
         'items_wrap'           => '<ul id="%1$s" class="%2$s">%3$s</ul>',
         'li_class'             => 'mr-6',
-        'a_class'              => 'text-blue-500 hover:text-blue-800'
+        'a_class'              => ' text-gray-700 hover:text-blue-200 hover:rounded'
 
     )); ?>
 </div>

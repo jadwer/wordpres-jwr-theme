@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="inline-flex">
+<div class="inline-flex py-0">
 <?php get_sidebar(); ?>
 
     <main>

@@ -22,8 +22,8 @@ function my_register_sidebars()
 {
     register_sidebar(
         array(
-            'id'            => 'principal',
-            'name'          => __('Sidebar principal'),
+            'id'            => 'lateral',
+            'name'          => __('Sidebar Principal de la barra lateral'),
             'description'   => __('Un sidebar pensado para agregar un menu especifico.'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
@@ -41,7 +41,7 @@ function register_my_menus()
     register_nav_menus(
         array(
             'header-menu' => __('Menu principal '),
-            'extra-menu' => __('Menu lateral'),
+            'lateral-menu' => __('Menu lateral'),
             'footer-menu' => __('Menu del footer'),
             'social-menu' => __('Menu de redes sociales')
         )

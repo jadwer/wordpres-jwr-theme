@@ -12,9 +12,13 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="h-32 bg-gray-400">
-        <nav class="flex flex-wrap content-center">
+    <header class="container mx-auto my-0 flex justify-between items-center  bg-gray-100">
+        <nav class="flex items-center">
             <?php get_template_part('./template-parts/header-identity'); ?>
             <?php get_template_part('./template-parts/header-menu'); ?>
         </nav>
+        <div class="flex items-center bg-blue-900 px-3 py-2 mx-auto text-white hover:bg-blue-300">
+            <?php wp_loginout('index.php'); ?>
+        </div>
     </header>
+    <div class="container">
