@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAP,+GAAO;AACP,OAAO,CAAP,qHAAO;AACP,OAAO,CAAP,oHAAO",
+    "sources": [
+        "jwr-theme-style.scss"
+    ],
+    "names": [],
+    "file": "jwr-theme-style.css"
+}
