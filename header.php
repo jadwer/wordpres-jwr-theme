@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="container mx-auto flex justify-around shadow-xl bg-gray-100">
+    <header class="w-screen flex justify-around mb-5 shadow-lg bg-gray-200 fixed">
         <nav class="flex justify-around w-5/6">
             <?php get_template_part('./template-parts/header-identity'); ?>
             <?php get_template_part('./template-parts/header-menu'); ?>
@@ -28,5 +28,5 @@
             </button>
         </div>
     </header>
-    <div class="">
+    <div class="flex pt-28">
 

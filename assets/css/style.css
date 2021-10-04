@@ -176022,7 +176022,7 @@ video {
 
 .custom-logo {
   display: flex;
-  height: 5rem;
+  height: 4rem;
   width: auto;
   flex-direction: column;
 }
@@ -176031,4 +176031,21 @@ video {
   .custom-logo{
     flex-direction: row;
   }
+}
+
+.main-content h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.main-content h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.main-content p {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

@@ -5,5 +5,17 @@
 
 
 .custom-logo {
-    @apply flex flex-col lg:flex-row h-20 w-auto;
+    @apply flex flex-col lg:flex-row h-16 w-auto;
+}
+
+.main-content h1 {
+    @apply text-4xl;
+}
+
+.main-content h2 {
+    @apply text-3xl;
+}
+
+.main-content p {
+    @apply px-5 py-4;
 }
