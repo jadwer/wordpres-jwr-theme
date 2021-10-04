@@ -57,29 +57,12 @@ function jwr_setup()
         add_theme_support('title-tag');
     }
 
-    // Custom logo.
-    $logo_width  = 120;
-    $logo_height = 90;
-
-    // If the retina setting is active, double the recommended width and height.
-    if (get_theme_mod('retina_logo', false)) {
-        $logo_width  = floor($logo_width * 2);
-        $logo_height = floor($logo_height * 2);
-    }
-
-    add_theme_support(
-        'custom-logo',
-        array(
-            'height'      => $logo_height,
-            'width'       => $logo_width,
-            'flex-height' => true,
-            'flex-width'  => true,
-        )
-    );
+    add_theme_support('custom-logo', array('header-text' => array( 'site-title', 'site-description' )));
 }
 
 add_action('after_setup_theme', 'jwr_setup');
 
+/*
 function menu_li_class($classes, $item, $args) {
     if(isset($args->li_class)) {
         $classes[] = $args->li_class;
@@ -87,8 +70,9 @@ function menu_li_class($classes, $item, $args) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'menu_li_class', 1, 3);
+*/
 
-
+/*
 function menu_a_class( $atts, $item, $args, $depth ) {
     if(empty($atts['class'])) {
         $atts['class'] = '';
@@ -116,10 +100,11 @@ function menu_a_class( $atts, $item, $args, $depth ) {
     return $atts;
 };
 add_filter( 'nav_menu_link_attributes', 'menu_a_class', 1, 4 );
+*/
 
+
+/*
 add_filter( 'get_custom_logo', 'change_logo_class' );
-
-
 function change_logo_class( $html ) {
 
     $html = str_replace( 'custom-logo', 'h-20 w-auto', $html );
@@ -128,3 +113,4 @@ function change_logo_class( $html ) {
     return $html;
 }
 add_filter('get_custom_logo','change_logo_class');
+*/

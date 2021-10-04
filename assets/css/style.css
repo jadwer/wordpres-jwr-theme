@@ -176020,4 +176020,15 @@ video {
   }
 }
 
+.custom-logo {
+  display: flex;
+  height: 5rem;
+  width: auto;
+  flex-direction: column;
+}
 
+@media (min-width: 1024px){
+  .custom-logo{
+    flex-direction: row;
+  }
+}

@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="inline-flex py-0">
+<div class="">
 <?php get_sidebar(); ?>
 
     <main>
-        <section class = "p-10">
+        <section class = "">
             <?php get_template_part('./template-parts/single-post')?>
         </section>
     </main>

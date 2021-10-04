@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<div class="inline-flex">
+<div class="">
     <?php get_sidebar(); ?>
 
     <main>
-        <section class="w-4/5 p-10">
+        <section class="">
             <?php get_template_part('./template-parts/page-content') ?>
         </section>
     </main>

@@ -1,5 +1,5 @@
     </div>
-    <footer class="flex bg-gray-700 text-gray-400 justify-center mx-auto">
+    <footer class="flex justify-evenly  bg-gray-800 text-gray-400">
         <?php
             get_template_part('./template-parts/footer-copy');
             get_template_part('./template-parts/footer-menu');

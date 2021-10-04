@@ -1,10 +1,9 @@
 <?php get_header(); ?>
-<div class="inline-flex">
+<div class="">
     <?php get_sidebar(); ?>
 
-
-    <main class="w-4/5 p-10">
-        <section class="w-4/5 p-10">
+    <main class="">
+        <section class="">
             <?php get_template_part('./template-parts/the-loop') ?>
         </section>
     </main>
