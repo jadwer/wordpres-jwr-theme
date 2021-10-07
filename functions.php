@@ -42,5 +42,5 @@ function jwr_setup()
 }
 add_action('after_setup_theme', 'jwr_setup');
 
-wp_register_style( 'Tailwindcss', 'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' );
-wp_enqueue_style('Tailwindcss');
+// wp_register_style( 'Tailwindcss', 'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' );
+// wp_enqueue_style('Tailwindcss');
