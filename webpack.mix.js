@@ -11,5 +11,5 @@ mix
         proxy: process.env.MIX_APP_HOST,
         host: process.env.MIX_APP_HOST,
         open: 'external',
-        files: ['./**/*.php', './**/*.css', './**/*.js'],
+        files: ['./**/*.php', './**/*.css', './**/*.js','../JwR-Alea/**/*.php', '../JwR-Alea/**/*.css', '../JwR-Alea/**/*.js'],
     });

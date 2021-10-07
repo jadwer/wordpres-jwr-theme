@@ -40,58 +40,7 @@ function jwr_setup()
 
     add_theme_support('custom-logo', array('header-text' => array( 'site-title', 'site-description' )));
 }
-
 add_action('after_setup_theme', 'jwr_setup');
 
-/*
-function menu_li_class($classes, $item, $args) {
-    if(isset($args->li_class)) {
-        $classes[] = $args->li_class;
-    }
-    return $classes;
-}
-add_filter('nav_menu_css_class', 'menu_li_class', 1, 3);
-*/
-
-/*
-function menu_a_class( $atts, $item, $args, $depth ) {
-    if(empty($atts['class'])) {
-        $atts['class'] = '';
-    }
-
-    $classes = explode(' ', $atts['class']);
-
-    $patterns = apply_filters( 'nav_menu_css_class_unescape_patterns', '/___/');
-    $replacements = apply_filters( 'nav_menu_css_class_unescape_replacements', ':' );
-    $classes = array_map(function($cssclass) use( $patterns, $replacements) {
-        return preg_replace($patterns, $replacements, $cssclass);
-    }, $classes);
-
-    if (property_exists($args, 'a_class')) {
-        $arr_classes = explode(' ', $args->a_class);
-        $classes = array_merge($classes, $arr_classes);
-    }
-    if (property_exists($args, "a_class_$depth")) {
-        $arr_classes = explode(' ', $args->{"a_class_$depth"});
-        $classes = array_merge($classes, $arr_classes);
-    }
-
-    $atts['class'] = implode(' ', $classes);
-
-    return $atts;
-};
-add_filter( 'nav_menu_link_attributes', 'menu_a_class', 1, 4 );
-*/
-
-
-/*
-add_filter( 'get_custom_logo', 'change_logo_class' );
-function change_logo_class( $html ) {
-
-    $html = str_replace( 'custom-logo', 'h-20 w-auto', $html );
-    $html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
-
-    return $html;
-}
-add_filter('get_custom_logo','change_logo_class');
-*/
+wp_register_style( 'Tailwindcss', 'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' );
+wp_enqueue_style('Tailwindcss');
